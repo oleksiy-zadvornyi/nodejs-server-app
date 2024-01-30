@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "aa8a02db-9803-4fe8-b8e5-b6cec10a9edd",
+		"name": "localhost",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32235384"
+	},
+	"item": [
+		{
+			"name": "getPosts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/posts/"
+			},
+			"response": []
+		},
+		{
+			"name": "getPostId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/posts/1zkjblj1ieslrz82xp0"
+			},
+			"response": []
+		},
+		{
+			"name": "createPost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"title\",\n    \"body\":\"body\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/posts/"
+			},
+			"response": []
+		},
+		{
+			"name": "editPostId",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"title\",\n    \"body\":\"body2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/posts/1zkjblj1je1lrz9vl8o"
+			},
+			"response": []
+		},
+		{
+			"name": "getCommentId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/comments/1zkjblj1je1lrz9vl8o"
+			},
+			"response": []
+		},
+		{
+			"name": "getCommentsByPostId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/posts/1zkjblj1je1lrz9vl8o/comments"
+			},
+			"response": []
+		},
+		{
+			"name": "createCommentByPost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"postId\":\"1zkjblj1je1lrz9vl8o\",\n    \"text\":\"text\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/posts/1zkjblj1je1lrz9vl8o/comments"
+			},
+			"response": []
+		},
+		{
+			"name": "editCommentId",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"postId\":\"1zkjblj1je1lrz9vl8o\",\n    \"text\":\"text2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/comments/1zkjblj1jgwlrza4oqm"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCommentId",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:3000/comments/1zkjblj1jiulrza8gec"
+			},
+			"response": []
+		},
+		{
+			"name": "deletePostId",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:3000/posts/1zkjblj1je1lrz9vl8o"
+			},
+			"response": []
+		}
+	]
+}
